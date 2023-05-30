@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/736a9e645e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Desencriptador ONE - Oracle</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/images.png" alt=""><p>Desafío ONE - Oracle.</p></a>
+    </header>
+
+    <main>
+
+        <div id="contenedor">
+            <textarea name="" id="ingreso" oninput="ajustar(this)" closs="cajas" placeholder="Ingrese su texto aquí..."></textarea>
+
+            <section id="salida" class="cajas">
+                <p id="txtsalida"></p>
+            </section>
+        </div>
+
+        <div id="botones">
+
+            <button onclick="encriptar()" class="boton" id="encriptar">ENCRIPTAR</button>
+            
+            <button onclick="desencriptar()" class="boton" id="desencriptar">DESENCRIPTAR</button>
+            
+            <button onclick="borrarTexto()" id="botonBorrar" class="boton">BORRAR</button>
+            
+            <button onclick="copiarTexto()" id="botonCopiar" class="boton">COPIAR</button>
+            
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/german-anselmo/" target="_blank"><p>Germán Anselmo</p></a>
+        <a href="https://www.linkedin.com/in/german-anselmo/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/gmanselmo" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
