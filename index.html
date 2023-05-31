@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/736a9e645e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Desencriptador ONE - Oracle</title>
 </head>
@@ -24,29 +25,27 @@
         <div id="contenedor">
             <textarea name="" id="ingreso" oninput="ajustar(this)" closs="cajas" placeholder="Ingrese su texto aquí..."></textarea>
 
+            <div id="botonmovil">
+
+                <button onclick="encriptar()" class="boton" id="encriptar">ENCRIPTAR</button>
+                
+                <button onclick="desencriptar()" class="boton" id="desencriptar">DESENCRIPTAR</button>
+                
+                <button onclick="borrarTexto()" id="botonBorrar" class="boton">BORRAR</button>
+                
+                <button onclick="copiarTexto()" id="botonCopiar" class="boton">COPIAR</button>
+                
+            </div>
+
             <section id="salida" class="cajas">
                 <p id="txtsalida"></p>
             </section>
         </div>
 
-        <div id="botones">
-
-            <button onclick="encriptar()" class="boton" id="encriptar">ENCRIPTAR</button>
-            
-            <button onclick="desencriptar()" class="boton" id="desencriptar">DESENCRIPTAR</button>
-            
-            <button onclick="borrarTexto()" id="botonBorrar" class="boton">BORRAR</button>
-            
-            <button onclick="copiarTexto()" id="botonCopiar" class="boton">COPIAR</button>
-            
-        </div>
-
-        
-
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/german-anselmo/" target="_blank"><p>Germán Anselmo</p></a>
+        <a href="https://www.linkedin.com/in/german-anselmo/" target="_blank"><p>Germán M. Anselmo Trenti</p></a>
         <a href="https://www.linkedin.com/in/german-anselmo/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="https://github.com/gmanselmo" target="_blank"><i class="fa-brands fa-github"></i></a>
     </footer>

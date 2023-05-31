@@ -50,6 +50,11 @@ function encriptar() {
   
     document.getElementById('txtsalida').innerText = textoEncriptado;
 
+    var salida = document.getElementById("salida");
+    salida.style.overflow = "auto";
+
+
+
     mostrarBotonCopiar();
 }
   
@@ -135,6 +140,7 @@ function borrarTexto() {
 
     var salida = document.getElementById("salida");
     salida.style.height = "21rem";
+    salida.style.overflow = "hidden";
 
     ocultarBotonCopiar()
 
